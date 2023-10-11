@@ -41,7 +41,7 @@ func init() { // 插件主体
 	})
 	engine.OnPrefix(`一言`, getdb).SetBlock(true).
 		Handle(func(ctx *zero.Ctx) {
-			ctx.SendChain(message.Text("少女祈祷中..."))
+			ctx.SendChain(message.Text("あいなちゃん寻找中..."))
 			args := ctx.State["args"].(string)
 			blist, err := hdb.getByKey(strings.TrimSpace(args))
 			if err != nil {

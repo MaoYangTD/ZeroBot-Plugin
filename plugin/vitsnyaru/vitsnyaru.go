@@ -38,7 +38,7 @@ func init() { // 插件主体
 			args := ctx.State["args"].(string)
 			pushURL := fmt.Sprintf(hf.HTTPSPushPath, vitsnyaruRepo)
 			statusURL := fmt.Sprintf(hf.HTTPSStatusPath, vitsnyaruRepo)
-			ctx.SendChain(message.Text("少女祈祷中..."))
+			ctx.SendChain(message.Text("あいなちゃん寻找中..."))
 			var (
 				pushReq   hf.PushRequest
 				pushRes   hf.PushResponse

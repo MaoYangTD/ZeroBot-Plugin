@@ -50,7 +50,7 @@ func init() {
 					d, errsub = web.GetData(url[0])
 					datachan <- d
 				}()
-				ctx.SendChain(message.Text("少女祈祷中..."))
+				ctx.SendChain(message.Text("あいなちゃん寻找中..."))
 
 				p, err := nsfw.Classify(url[0])
 				if err != nil {

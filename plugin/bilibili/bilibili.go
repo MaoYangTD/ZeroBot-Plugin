@@ -552,7 +552,7 @@ func init() {
 
 	engine.OnFullMatch("更新vup", zero.SuperUserPermission).SetBlock(true).
 		Handle(func(ctx *zero.Ctx) {
-			ctx.SendChain(message.Text("少女祈祷中..."))
+			ctx.SendChain(message.Text("あいなちゃん寻找中..."))
 			err := updateVup()
 			if err != nil {
 				ctx.SendChain(message.Text("ERROR: ", err))

@@ -32,7 +32,7 @@ func init() { // 插件主体
 	})
 	engine.OnPrefix("清晰术", zero.MustProvidePicture).SetBlock(true).
 		Handle(func(ctx *zero.Ctx) {
-			ctx.SendChain(message.Text("少女祈祷中..."))
+			ctx.SendChain(message.Text("あいなちゃん寻找中..."))
 			realcuganURL := fmt.Sprintf(hf.HTTPSPredictPath, realcuganRepo)
 			for _, url := range ctx.State["image_url"].([]string) {
 				imgdata, err := web.GetData(url)

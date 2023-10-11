@@ -248,7 +248,7 @@ func init() {
 		})
 	engine.OnFullMatch("更新vtb", zero.SuperUserPermission, getdb).SetBlock(true).
 		Handle(func(ctx *zero.Ctx) {
-			ctx.Send("少女祈祷中......")
+			ctx.Send("あいなちゃん寻找中......")
 			db := model.Initialize(dbfile)
 			if db != nil {
 				vl, err := db.GetVtbList()

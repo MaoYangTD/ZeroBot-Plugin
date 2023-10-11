@@ -81,7 +81,7 @@ func init() { // 插件主体
 				ctx.SendChain(message.Text("ERROR: ", err))
 				return
 			}
-			ctx.SendChain(message.Text("少女祈祷中..."))
+			ctx.SendChain(message.Text("あいなちゃん寻找中..."))
 			args := ctx.State["args"].(string)
 			data, err := web.GetData(cfg.BaseURL + fmt.Sprintf(aipaintTxt2ImgURL, cfg.Token, url.QueryEscape(strings.TrimSpace(strings.ReplaceAll(args, " ", "%20")))))
 			if err != nil {
@@ -113,7 +113,7 @@ func init() { // 插件主体
 					tags[value[0]] = strings.Join(value[1:], ":")
 				}
 			}
-			ctx.SendChain(message.Text("少女祈祷中..."))
+			ctx.SendChain(message.Text("あいなちゃん寻找中..."))
 			apiurl := "/got_image?token=" + cfg.Token
 			if _, ok := tags["tags"]; ok {
 				apiurl += "&tags=" + url.QueryEscape(strings.ReplaceAll(strings.TrimSpace(tags["tags"]), " ", "%20"))

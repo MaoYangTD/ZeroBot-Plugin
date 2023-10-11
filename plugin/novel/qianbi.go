@@ -62,7 +62,7 @@ func init() {
 	_ = os.MkdirAll(cachePath, 0755)
 	engine.OnRegex("^小说([\u4E00-\u9FA5A-Za-z0-9]{1,25})$").SetBlock(true).Limit(ctxext.LimitByUser).
 		Handle(func(ctx *zero.Ctx) {
-			ctx.SendChain(message.Text("少女祈祷中......"))
+			ctx.SendChain(message.Text("あいなちゃん寻找中......"))
 			key := getAPIKey(ctx)
 			u, p, _ := strings.Cut(key, ",")
 			if u == "" {
@@ -164,7 +164,7 @@ func init() {
 		Handle(func(ctx *zero.Ctx) {
 			regexMatched := ctx.State["regex_matched"].([]string)
 			id := regexMatched[1]
-			ctx.SendChain(message.Text("少女祈祷中......"))
+			ctx.SendChain(message.Text("あいなちゃん寻找中......"))
 			key := getAPIKey(ctx)
 			u, p, _ := strings.Cut(key, ",")
 			if u == "" {

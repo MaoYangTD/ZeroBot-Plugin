@@ -47,7 +47,7 @@ func init() { // 插件主体
 				ctx.SendChain(message.Text("ERROR: 以图绘图必须添加tag"))
 				return
 			}
-			ctx.SendChain(message.Text("少女祈祷中..."))
+			ctx.SendChain(message.Text("あいなちゃん寻找中..."))
 			postURL := cfg.BaseURL + fmt.Sprintf(aipaintImg2ImgURL, cfg.Token, url.QueryEscape(strings.TrimSpace(strings.ReplaceAll(args, " ", "%20"))))
 
 			f, err := os.Open(c.headimgsdir[0])

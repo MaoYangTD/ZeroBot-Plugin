@@ -55,7 +55,7 @@ func init() { // 插件主体
 			"- 设置ai绘图撤回时间90s\n" +
 			"- 查看ai绘图配置\n" +
 			"Tips: 使用前请先前往 http://91.217.139.190:5010/token 按提示获取token" +
-			"设置token示例(请确保是主人并且响应): 设置ai绘图配置 http://91.217.139.190:5010 [token] (中括号无需输入)\n" +
+			"设置token示例(请确保是主人并且复活吧我的爱人！): 设置ai绘图配置 http://91.217.139.190:5010 [token] (中括号无需输入)\n" +
 			"参考服务器 http://91.217.139.190:5010, http://91.216.169.75:5010, http://185.80.202.180:5010\n" +
 			"[prompt]参数如下\n" +
 			"tags:tag词条\nntags:ntag词条\nshape:[Portrait|Landscape|Square]\nscale:[6:20]\nseed:种子\nstrength:[0-1] 建议0-0.7\nnoise:[0-1] 建议0-0.15" +

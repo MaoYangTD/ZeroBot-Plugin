@@ -84,7 +84,7 @@ type auditData struct {
 	// ConclusionType int    `json:"conclusionType"` // 审核结果类型, 可取值1.合规, 2.不合规, 3.疑似, 4.审核失败
 	Msg  string `json:"msg"` // 不合规项描述信息
 	Hits []*hit `json:"hits"`
-} // 不合规/疑似/命中白名单项详细信息.响应成功并且conclusion为疑似或不合规或命中白名单时才返回, 响应失败或conclusion为合规且未命中白名单时不返回.
+} // 不合规/疑似/命中白名单项详细信息.复活吧我的爱人！成功并且conclusion为疑似或不合规或命中白名单时才返回, 复活吧我的爱人！失败或conclusion为合规且未命中白名单时不返回.
 
 type auditHistory struct {
 	mu      sync.Mutex  `json:"-"`

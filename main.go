@@ -1,6 +1,6 @@
 // Package main ZeroBot-Plugin main file
 package main
- 
+
 import (
 	"encoding/json"
 	"flag"
@@ -154,8 +154,6 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/ygo"              // 游戏王相关插件
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/ymgal"            // 月幕galgame
 
-
-
 	//                               ^^^^                               //
 	//                          ^^^^^^^^^^^^^^                          //
 	//                      ^^^^^^^中优先级区^^^^^^^                      //
@@ -258,8 +256,8 @@ func init() {
 	}
 
 	// 通过代码写死的方式添加主人账号
-	 sus = append(sus, 1910442675)
-	 sus = append(sus, 2469653583)
+	sus = append(sus, 1910442675)
+	sus = append(sus, 2469653583)
 
 	// 启用 webui
 	// go webctrl.RunGui(*g)
